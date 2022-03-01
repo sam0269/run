@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&family=Montserrat:wght@600&family=Roboto+Slab:wght@500&family=Ubuntu:wght@300&display=swap");
+/* ++++++++++++++++++++++++++++++++++++++++++ navbar styling ++++++++++++++++++++++++++++++++++++ */
+#navbar-content {
+  height: 7rem;
+  background-color: rgb(230, 229, 228);
+  font-family: 'Montserrat', sans-serif;
+}
+.logo{
+  font-size: 3rem;
+}
+header{
+  padding: 0 18rem;
+  
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+ol{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ol li{
+  color: #7E543A;
+  list-style: none;
+  margin-right: 1.5rem;
+}
+ol a{text-decoration: none;}
+/* ++++++++++++++++++++++++++++++++++++++++++ banner styling ++++++++++++++++++++++++++++++++++++ */
+
+.banner-article {
+  height: 130vh;
+  width:100vw;
+}
+
+#banner-section {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+  z-index: -2;
+}
+
+#banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../public/images/1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -4;
+  opacity: 0.7;
+}
+
+.banner-content {
+  display: inline-flex;
+  transform: translate(25rem, 67rem);
+}
+
+.box {
+  color: #fff;
+  height: 30rem;
+  width: 35rem;
+}
+
+.item p {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.item {
+  transform: translateY(8rem);
+  margin-left: 1.2rem;
+}
+.item h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.item a {
+  font-family: 'Chela One', cursive;
+  font-size: 2rem;
+  color: rgb(45, 45, 83);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++ Primary styling ++++++++++++++++++++++++++++++++++++ */
+
+#primary-section {
+  margin-top: 26rem;
+}
+
+.primary-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+  font-family: 'Roboto Slab', serif;
+  animation: slider 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.girl{
+  animation: slider 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slider{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translate(4rem);
+  }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++ Secondary styling ++++++++++++++++++++++++++++++++++++ */
+#secondary-section{
+  display: inline-flex;
+  width: 100vw;
+}
+.second-item{
+  height: 40rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: ubuntu;
+}
+h1{font-size: 6rem;}
+.indexes{
+  height: 35.7rem;
+  width: 57rem;
+  background-color: #7E543A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.indexes p{
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.spcl-btn{
+  padding: 1.5rem 3rem;
+    background: none;
+    border: 0.2rem solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1.3s;
+}
+.spcl-btn:hover{
+  transform: scale(1.2);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++ Ternary styling ++++++++++++++++++++++++++++++++++++ */
+.ternary-content{
+  display: flex;
+}
+.ternary-item{
+  padding: 7rem;
+}
+.ternary-item h1{
+  font-size: 8rem;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.ternary-item h2{
+  font-size: 5rem;
+  font-family: ubuntu;
+}
+.ternary-item p{
+  font-size: 2.5rem;
+  font-family: 'Chela One', cursive;
+  margin-top: 1rem;
+}
+
+/* ++++++++++++++++++++++++++ Quadratic section 🙁  ++++++++++++++++++++++ */
+#quadratic-content{
+  display: flex;
+  width: 92vw;
+  margin: auto;
+}
+.items{
+  background-color: #7E543A;
+  height: 55rem;
+}
+.item-block{
+  font-family: 'Chela One', cursive;
+  height: 27rem;
+  transform: translateY(13rem);
+  color: #fff;
+  font-size: 2.5rem;
+  width: 42rem;
+  line-height: 2;
+  margin-left: 2.5rem;
+}
+
+/* ++++++++++++++++++++++++++ Contact section 🙁  ++++++++++++++++++++++ */
+
